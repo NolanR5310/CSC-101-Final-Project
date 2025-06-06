@@ -11,7 +11,7 @@ class TestLibraryFunctions(unittest.TestCase):
             data.Book("Book C", "Author One", 4.7, 200, 8, "Fiction", 2021),
         ]
 
-    # ----- load_books_from_csv -----
+    # load_books_from_csv
 
     def test_load_books_returns_list(self):
         result = driver.load_books_from_csv("BookData.csv")
@@ -50,4 +50,3 @@ class TestLibraryFunctions(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-#Commit issue resolved

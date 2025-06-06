@@ -35,13 +35,13 @@ def filter_books(books: list[data.Book], search_title: str, search_author: str,
             continue
         filtered.append(b)
     return sorted(filtered, key=lambda x: (-x.rating, x.title.lower()))
-
+#Defines the filter process by which books will be found using the interface
 def display_menu():
     print("\n📚 Welcome to the Library Book Tracker 📚")
     print("1. Search books with filters")
     print("2. Show all books")
     print("3. Exit")
-
+#Displays the User Interface
 
 def run_interface():
     list_of_books = load_books_from_csv("BookData.csv")
@@ -75,7 +75,7 @@ def run_interface():
             break
         else:
             print("Invalid choice. Please enter 1, 2, or 3.")
-
+#Process for the User Interface
 
 if __name__ == "__main__":
     run_interface()
@@ -96,4 +96,3 @@ if __name__ == "__main__":
 #The initial data list is defined as list_of_books
 #The final list which will returned the filtered list of books from the central function will be defined as final_list
 #No dictionaries will be defined in this program
-#Commit issue resolved

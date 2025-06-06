@@ -11,3 +11,5 @@
    2. Attributes of Title, Author, Rating, Price, Genre,  and Year
 3. BookData.csv
    1. This is the file containing the data set of 550 books containing the same attributes from the data.py file above
+4. test_driver.py
+   1. This is the file that contains the test functions for driver.py. Tests include loading books from the .csv, filtering the books, and sorting the books.
